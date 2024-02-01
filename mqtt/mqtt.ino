@@ -14,6 +14,7 @@ void setup() {
 }
 
 void loop() {
+  Serial.println("hello");
   server.handleClient();
   if (mqtt_work) {
     mqtt_client.loop();
